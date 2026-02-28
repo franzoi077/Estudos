@@ -61,9 +61,13 @@ val2 = float(b[2])
 print(f'O valor a ser pago na peça 1 é R$ {qtd1 * val1:.2f}')
 print(f'O valor a ser pago na peça 2 é R$ {qtd2 * val2:.2f}')
 print(f'O valor total a ser pago é R$ {(qtd1 * val1) + (qtd2 * val2):.2f}')
+#versao do professor:
+a1, b1, c1 = map(float, input('digite o codigo, quantidade, valor do produto 1: ').split(2))#o map serve para aplicar varios metodos na mesma linha de variaveis
+a2, b2, c3 = map(float, input('digite o codigo, quantidade, valor do produto 2: ').split(3))
+print(f'Valor a pagar = {(b1 * c1) + (b2 * c3)}')
 #o uso do split() é para dividir a string em uma lista de palavras, usando o espaço como separador. O índice [0] é usado para acessar o primeiro elemento da lista, que é o código da peça, o índice [1] é usado para acessar o segundo elemento da lista, que é a quantidade de peças, e o índice [2] é usado para acessar o   terceiro elemento da lista, que é o valor unitário da peça. Portanto, a[0] retorna o código da peça, a[1] retorna a quantidade de peças e a[2] retorna o valor unitário da peça. O mesmo vale para a variável b.    
 
 #decimo código:
 pi = 3.14159
 R = float(input('digite o valor do raio: '))
-print(f'VOLUME  {(4.0 / 3.0) * pi * R ** 3:.3f}')
+print(f'VOLUME = {(4.0 / 3.0) * pi * R ** 3:.3f}')

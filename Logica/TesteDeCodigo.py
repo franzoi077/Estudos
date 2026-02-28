@@ -1,5 +1,3 @@
-a = float(input())
-b = float(input())
-c = float(input())
-print(f'media = {(a * 2 + b * 3 + c * 5) / 10 }')
+d = int(input('digite a distancia que o carro X vai ter de Y: '))
+print(f'{d * 2} minutos')
 
