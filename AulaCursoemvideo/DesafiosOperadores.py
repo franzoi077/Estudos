@@ -46,4 +46,3 @@ print(f'com o desconto de 5% o preço do produto é igual a R${P * 0.95:.2f}')
 #Desafio 13: Aumento de 15% em um salário
 S = float(input('Digite o salário do funcionário: R$'))
 print(f'com o aumento de 15% o salário do funcionário é igual a R${S * 1.15:.2f}')
-
