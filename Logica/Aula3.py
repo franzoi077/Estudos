@@ -1,8 +1,8 @@
-#1018: V2
+#1018:
 valor = int(input())
 notas = [100, 50, 20, 10, 5, 2, 1]
 print(valor)
-for a in notas:
+for a in notas: #a variavel a vai puxar todos os itens da lista notas e executa-los no programa.
     quantidade = valor // a
     valor %= a
     print(f'{quantidade} nota(s) de R$ {a},00')
@@ -12,7 +12,7 @@ s = int(input('digite os segundos: '))
 horas = s // 3600
 s %= 3600
 minutos = s // 60
-s %= 60
+s %= 60 # s = s % 60
 print(f'{horas}:{minutos}:{s}')
 
 #1019: v2
@@ -27,7 +27,7 @@ print(f'{resultados[0]}:{resultados[1]}:{s}')
 
 #1020: v1
 i = int(input('digite sua idade em dias: '))
-anos = i // 360
+anos = i // 360 #esse processo é chamado de decomposição de valores
 i %= 360
 meses = i // 30
 i %= 30
