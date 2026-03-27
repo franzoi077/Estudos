@@ -1,28 +1,31 @@
-numeros = []
-par = []
-impar = []
+pessoas = []
+individuo = []
+cont = 0
 
 while True:
-    a = int(input('digite um valor para ver se ele é par ou ímpar: '))
-    numeros.append(a)
+    #cadastrando as pessoas
+    individuo.append(str(input('Digite o nome; ')))
+    individuo.append(int(input('Digite o peso: ')))
+    pessoas.append(individuo[:])
+
+    cont += 1
     
-    #verificando se o nuemro é par :
-    if a % 2 == 0:
-        par.append(a)
-    else:
-        impar.append(a)
-    
-    #mecanismo de parada
+    individuo.clear() #limpando a lista para a proxima pessoa
+
+    #mecanismo de parada:
     p = ' '
     while p not in 'SN':
-        p = str(input('Voce quer continuar? [S/N]').strip().upper()[0])
+        p = str(input('Voce quer continuar ? [S/N]').strip().upper()[0])
     if p == 'N':
         break
 
-numeros.sort()
-par.sort()
-impar.sort()
+pesado = max(pessoas)
+magro = min(pessoas)
 
-print(f'pares{par}')
-print(f'impar{impar}')
-print(f'todos os numeros{numeros}')
+print('=-'*20)
+print(f'foram cadastradas {cont} pessoas')
+for p in pessoas:
+    if p == pesado:
+        print(f'o {p[0]} é o mais pesado com {p[1]}Kg')
+    elif p == magro:
+        print(f'o {p[0]} é o mais magro com {p[1]} Kg')

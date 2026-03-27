@@ -72,3 +72,72 @@ b = a[:] #isso é uma copia da lista 'a'
 b[2] = 8
 print(f'lsita A: {a}')
 print(f'lista B: {b}')
+
+#parte 2 da aula de listas
+#é possivel criar uma lista composta por outras listas, ou seja, uma lista de listas
+#ex:
+galera = [['João', 19], ['Ana', 33], ['Jorge', 22]]
+print(galera)
+print(galera[0]) #acessando a primeira lista
+print(galera[0][0]) #acessando o primeiro elemento da primeira lista
+print(galera[0][1]) #acessando o segundo elemento da primeira lista
+print(galera[1][0]) #acessando o primeiro elemento da segunda lista
+print(galera[1][1]) #acessando o segundo elemento da segunda lista
+print(galera[2][0]) #acessando o primeiro elemento da terceira lista
+print(galera[2][1]) #acessando o segundo elemento da terceira lista
+
+#separando um ex do outro
+print('-'*20)
+print('separando um ex do outro')
+print('-'*20)
+
+#ex:
+teste = list()
+teste.append('Arthur')
+teste.append(19)
+galera = list()
+galera.append(teste [:]) #adicionando a lista teste a lista galera
+teste[0] = 'Maria' #alterando o valor da lista teste
+teste[1] = 22 #alterando o valor da lista teste
+galera.append(teste [:]) #adicionando a lista teste a lista galera
+print(galera)
+
+#separando um ex do outro
+print('-'*20)
+print('separando um ex do outro')
+print('-'*20)
+
+#ex:
+galera = [['João', 19], ['Ana', 33], ['Joaquim', 13], ['Maria', 45]]
+print(galera)
+print(f'O {galera[0][0]} tem {galera[0][1]} anos de idade.')
+print(f'O {galera[1][0]} tem {galera[1][1]} anos de idade.')
+print(f'O {galera[2][0]} tem {galera[2][1]} anos de idade.')
+print(f'O {galera[3][0]} tem {galera[3][1]} anos de idade.')
+for p in galera:
+    print(p[0]) #acessando o primeiro elemento de cada lista
+    print(f'O {p[0]} tem {p[1]} anos de idade.') #acessando o primeiro e o segundo elemento de cada lista
+
+#separando um ex do outro
+print('-'*20)
+print('separando um ex do outro')
+print('-'*20)
+
+#ex:
+galera = list()
+dado = list()
+totmai = totmen = 0
+for c in range(0, 3):
+    dado.append(str(input('Nome: ')))
+    dado.append(int(input('Idade: ')))
+    galera.append(dado[:]) #adicionando a lista dado a lista galera e tirando a ligação entre as listas
+    dado.clear() #limpando a lista dado para receber os próximos dados
+print(galera)
+for p in galera:
+    if p[1] >= 18:
+        print(f'{p[0]} é maior de idade. ')
+        totmai += 1
+    else:
+        print(f'{p[0]} é menor de idade. ')
+        totmen += 1
+print(f'Temos {totmai} maiores de idade e {totmen} menores de idade.')
