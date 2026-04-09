@@ -67,6 +67,36 @@ print(f'novo salario: {novo_salario:.2f}')
 print(f'aumento: {aumento:.2f}')
 print(f'percentual: {percentual} %')
 
+#1049:
+filo = input('digite o filo do animal: ')
+classe = input('digite a classe do animal: ')
+ordem = input('digite a ordem do animal: ')
+if filo == 'vertebrado':
+    if classe == 'ave':
+        if ordem == 'carnivoro':
+            print('aguia')
+        elif ordem == 'onivoro':
+            print('pomba')
+    
+    elif classe == 'mamifero':
+        if ordem == 'onivoro':
+            print('homem')
+        elif ordem == 'herbivoro':
+            print('vaca')
+elif filo == 'invertebrado':
+    
+    if classe == 'inseto':
+        if ordem == 'hematofago':
+            print('pulga')
+        elif ordem == 'herbivoro':
+            print('lagarta')
+    
+    elif classe == 'anelideo':
+        if ordem == 'hematofago':
+            print('sanguessuga')
+        elif ordem == 'onivoro':
+            print('minhoca')
+
 #1050:
 codigo = int(input('digite o codigo da cidade: '))
 if codigo == 61:
