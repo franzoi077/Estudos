@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/arthurfranzoifernandes/Documents/Estudos/UNB/Aula2'
+relocations:     []
+...
